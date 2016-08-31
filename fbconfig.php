@@ -14,11 +14,10 @@
     It passes an array of configuration options to the constructor.*/
     $fb = new Facebook\Facebook([
         'app_id' => '1733591630236331',         //Your App ID
-        'app_secret' => 'bf0790db124ab31c80d959a852dfe536',     //Your App Secret
+        'app_secret' => '6b1e08c6c7bd031371e5b43ba8ef01d3',     //Your App Secret
         'default_graph_version' => 'v2.5',
     ]);
-$app_id = '1733591630236331';
-$app_secret = 'bf0790db124ab31c80d959a852dfe536';
-$fb_login_url = 'https://facebookgalleryapp.herokuapp.com/index.php';
+$app_id = '161816377591187';
+$app_secret = '6b1e08c6c7bd031371e5b43ba8ef01d3';
 // session_start();
 ?>
