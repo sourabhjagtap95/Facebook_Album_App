@@ -140,7 +140,7 @@ $helper = $fb->getRedirectLoginHelper(); /*The FacebookRedirectLoginHelper
 
 
 $permissions = ['email','user_photos'];
-$login_url = $helper->getLoginUrl('http://localhost/Facebook_app/login-callback.php',$permissions);
+$login_url = $helper->getLoginUrl('https://'.$_SERVER['SERVER_NAME'].'/login-callback.php',$permissions);
 
 
 
