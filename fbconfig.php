@@ -6,7 +6,7 @@
  * Time: 10:26 PM
  */
 
-    session_start();
+    
     require_once __DIR__ . '/vendor/autoload.php';
     /*Facebook\Facebook is a service class provides an easy interface for working with all the components of the SDK.
     It passes an array of configuration options to the constructor.*/
@@ -18,4 +18,5 @@
 $app_id = 'AppId';
 $app_secret = 'AppSecret';
 $fb_login_url = 'http://localhost/Facebook_app/index.php';
+session_start();
 ?>
