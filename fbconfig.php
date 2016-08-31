@@ -13,11 +13,11 @@
     /*Facebook\Facebook is a service class provides an easy interface for working with all the components of the SDK.
     It passes an array of configuration options to the constructor.*/
     $fb = new Facebook\Facebook([
-        'app_id' => '1733591630236331',         //Your App ID
-        'app_secret' => '6b1e08c6c7bd031371e5b43ba8ef01d3',     //Your App Secret
+        'app_id' => 'appid',         //Your App ID
+        'app_secret' => 'appsecret',     //Your App Secret
         'default_graph_version' => 'v2.5',
     ]);
-$app_id = '161816377591187';
-$app_secret = '6b1e08c6c7bd031371e5b43ba8ef01d3';
+$app_id = 'appid';
+$app_secret = 'appsecret';
 // session_start();
 ?>
