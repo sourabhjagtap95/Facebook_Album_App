@@ -276,7 +276,7 @@ if(!empty($_SESSION['facebook_access_token']) && isset($_SESSION['facebook_acces
             foreach ($user_albums as $album) {
                 ?>
                 <li>
-                    <a href='?album_name=<?php echo $album['name']; ?>&album_id=<?php echo $album['id']; ?>'><?php echo $album['name']; ?></a>
+                    <a href="?album_name=<?php echo $album['name']; ?>&album_id=<?php echo $album['id']; ?>"><?php echo $album['name']; ?></a>
                 </li>
                 <?php
             }
