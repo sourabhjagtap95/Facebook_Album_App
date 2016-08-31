@@ -19,6 +19,6 @@
     ]);
 $app_id = '1733591630236331';
 $app_secret = 'bf0790db124ab31c80d959a852dfe536';
-$fb_login_url = 'index.php';
+$fb_login_url = 'https://facebookgalleryapp.herokuapp.com/index.php';
 // session_start();
 ?>
