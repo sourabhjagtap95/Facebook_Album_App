@@ -5,6 +5,9 @@
  * Date: 29/8/16
  * Time: 11:31 PM
  */
+ if (!session_id()) {
+    session_start();
+}
 require_once ('fbconfig.php');
 require_once __DIR__ . '/vendor/autoload.php';
 
