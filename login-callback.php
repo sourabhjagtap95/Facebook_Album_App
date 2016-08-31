@@ -43,11 +43,11 @@ if(isset($accessToken)){
             echo "Error for obtaining long-lived token : " .$e->getMessage();
         }
     }
-    header('Location: index.php');
+    header('Location: https://facebookgalleryapp.herokuapp.com/index.php');
 }
 else{
     if ($helper->getError()) {
-        header('Location: index.php');
+        header('Location: https://facebookgalleryapp.herokuapp.com/index.php');
     } else {
         header('HTTP/1.0 400 Bad Request');
 //            echo 'Bad request';
@@ -56,7 +56,7 @@ else{
 }
 if(isset($_REQUEST['error'])){
     if(isset($_REQUEST['error_reason']) && $_REQUEST['error_reason']=='user_denied'){
-        header('Location: index.php');
+        header('Location: https://facebookgalleryapp.herokuapp.com/index.php');
     }
 }
 
