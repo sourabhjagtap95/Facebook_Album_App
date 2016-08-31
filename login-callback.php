@@ -38,16 +38,16 @@ if(isset($accessToken)){
     if( !$accessToken->isLongLived()) {
         // Exchange a short-lived access token for a long lived one !!!
         try {
-            $accessToken = $oAuth2Client->getLongLivedAccessToken('{access-token}');
+            $accessToken = $oAuth2Client->getLongLivedAccessToken($accessToken);
         } catch (\Facebook\Exceptions\FacebookSDKException $e) {
             echo "Error for obtaining long-lived token : " .$e->getMessage();
         }
     }
-    header('Location: http://localhost/Facebook_app/index.php');
+    header('Location: index.php');
 }
 else{
     if ($helper->getError()) {
-        header('Location: http://localhost/Facebook_app/index.php');
+        header('Location: index.php');
     } else {
         header('HTTP/1.0 400 Bad Request');
 //            echo 'Bad request';
@@ -56,7 +56,7 @@ else{
 }
 if(isset($_REQUEST['error'])){
     if(isset($_REQUEST['error_reason']) && $_REQUEST['error_reason']=='user_denied'){
-        header('Location: http://localhost/Facebook_app/index.php');
+        header('Location: index.php');
     }
 }
 
