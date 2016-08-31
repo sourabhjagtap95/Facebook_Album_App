@@ -17,7 +17,7 @@
         'app_secret' => 'appsecret',     //Your App Secret
         'default_graph_version' => 'v2.5',*/
     ]);
-$app_id = 'appid';
-$app_secret = 'appsecret';
+$app_id = '1733591630236331';
+$app_secret = 'bf0790db124ab31c80d959a852dfe536';
 // session_start();
 ?>
