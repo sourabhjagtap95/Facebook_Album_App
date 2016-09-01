@@ -26,7 +26,7 @@ try{
 }
 if(isset($accessToken)){
     // User Logged In !!
-    $_SESSION['facebook_access_token'] = (string) $accessToken;
+
 
     /**When a user first logs into your app, the access token your app receives
      * will be a short-lived access token that lasts about 2 hours.
@@ -43,6 +43,7 @@ if(isset($accessToken)){
             echo "Error for obtaining long-lived token : " .$e->getMessage();
         }
     }
+        $_SESSION['facebook_access_token'] = (string) $accessToken;
     header('Location: https://facebookgalleryapp.herokuapp.com/index.php');
 }
 else{
