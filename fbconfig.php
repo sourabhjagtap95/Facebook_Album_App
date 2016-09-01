@@ -17,7 +17,7 @@
         'app_secret' => '',     //Your App Secret
         'default_graph_version' => 'v2.5',
     ]);
-$app_id = '';
+$app_id = '';   //Type here also
 $app_secret = '';
 // session_start();
 ?>
