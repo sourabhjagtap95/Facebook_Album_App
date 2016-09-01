@@ -19,5 +19,5 @@
     ]);
 $app_id = '';   //Type here also
 $app_secret = '';
-// session_start();
+
 ?>
