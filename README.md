@@ -15,7 +15,7 @@ BootStrap
 -----------------
 http://getbootstrap.com/
 
-#How To Use
+How To Use
 -----------------
 <strong>Steps:</strong></br>
 1) Go to https://developers.facebook.com/ and register your self as Facebook developer.</br>
