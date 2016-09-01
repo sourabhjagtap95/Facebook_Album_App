@@ -11,6 +11,10 @@ Bootstrap-Image-Gallery
 -----------------
 https://github.com/blueimp/Bootstrap-Image-Gallery
 
+BootStrap 
+-----------------
+http://getbootstrap.com/
+
 #How To Use
 -----------------
 <strong>Steps:</strong></br>
