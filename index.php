@@ -415,11 +415,11 @@ else
             <div class="collapse navbar-collapse" id="bs">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#myModal1" role="button" data-toggle="modal">About</a></li>
+                    <li><a href="#about" role="button" data-toggle="modal">About</a></li>
                 </ul>
                 <!-- code for the right side of the navbar -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#myModal" role="button" data-toggle="modal">Contact Me</a>
+                    <li><a href="#contact" role="button" data-toggle="modal">Contact Me</a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -427,7 +427,7 @@ else
     </nav>
 
     <!-- Modal Contact-->
-    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal fade" id="contact" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -450,7 +450,7 @@ else
         </div>
     </div>
     <!-- Modal About-->
-    <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal fade" id="about" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
