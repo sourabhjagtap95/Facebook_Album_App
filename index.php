@@ -510,7 +510,7 @@ if(isset($_POST['download_button'])) {
         readfile($zip_folder);
     }
     else
-        echo "<script>alert('Please select a photo');</script>"
+        echo "<script>alert('Please select a photo');</script>";
 }
 
 else if(isset($_POST['download_button_all'])) {
