@@ -509,6 +509,8 @@ if(isset($_POST['download_button'])) {
         header('Content-type: application/zip');
         readfile($zip_folder);
     }
+    else
+        echo "<script>alert('Please select a photo');</script>"
 }
 
 else if(isset($_POST['download_button_all'])) {
