@@ -53,11 +53,6 @@
         <div class="collapse navbar-collapse" id="bs">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="../index.php">Home <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-            <!-- code for the right side of the navbar -->
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="../contact.php">Contact Us</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
