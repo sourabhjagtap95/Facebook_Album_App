@@ -392,7 +392,7 @@ if(!empty($_SESSION['facebook_access_token']) && isset($_SESSION['facebook_acces
         }
     }
     if(!isset($_GET['album_name'])){
-        echo "<div class='text-center jumbotron'><h2>Just for Test</h2></div>";
+        echo "<div class='text-center jumbotron'><h2>Select an Album</h2></div>";
     }
 }
 else
