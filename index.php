@@ -5,7 +5,7 @@
  * Date: 28/8/16
  * Time: 9:39 PM
  */
-
+ob_start();
 require_once ('fbconfig.php');
 require_once __DIR__ . '/vendor/autoload.php';
 ?>
@@ -490,24 +490,33 @@ else
 if(isset($_POST['download_button'])) {
     if (isset($_POST['checkbox'])) {
         $photos = $_POST['checkbox'];
+        $photos_directory = "libs/resources/downloaded_photos/album_photos/";
+        $zip = new ZipArchive();
+        $zip_folder = "libs/resources/downloaded_photos/album_photos/".uniqid();
+        $zip_status = $zip->open($zip_folder,ZipArchive::CREATE);
         foreach ($photos as $photo_selected) {
             $photos_directory = "libs/resources/downloaded_photos/album_photos";
             if (!file_exists($photos_directory))
                 mkdir($photos_directory, 0777);
             else {
-                if(file_put_contents($photos_directory . "/" . uniqid() . ".jpg", fopen($photo_selected, 'r'))){
-                    header('Content-Disposition: attachment; filename=save_as_name.jpg');
+                if($zip_status) {
+                    $zip->addFromString(uniqid(),file_get_contents($photo_selected));
                 }
             }
         }
+        $zip->close();
+        header('Content-Disposition: attachment; filename="save_as.zip"');
+        header('Content-type: application/zip');
+        readfile($zip_folder);
     }
 }
+
 else if(isset($_POST['download_button_all'])) {
 
     $zip = new ZipArchive();
     $zip_folder = "libs/resources/downloaded_photos/album_photos/".uniqid();
     $zip_status = $zip->open($zip_folder,ZipArchive::CREATE);
-
+    $user_albums_download = $_GET['user_albums_download'];
     foreach ($user_albums_download as $album) {
         if ($album['name'] == $album_name) {
             $album = (array)$album;
@@ -538,13 +547,14 @@ else if(isset($_POST['download_button_all'])) {
 
                     }
                 }
-
+                $zip->close();
+                header('Content-Disposition: attachment; filename="All_Photos.zip"');
+                header('Content-type: application/zip');
+                readfile($zip_folder);
             }
         }
     }
-    $zip->close();
-    header('Content-type:application/zip');
-    header('Content-disposition:attachment;filename="photos.zip"');
+
 }
 else if(isset($_POST['move_album_picasa'])){
     if(!isset($_GET['google_session'])){
