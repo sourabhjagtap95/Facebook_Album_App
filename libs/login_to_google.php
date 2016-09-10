@@ -46,19 +46,13 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="index.php"><img src="../libs/resources/images/facebook_home_logo_580-100034106-large.jpg"
-                                                          class="logo img-circle" height="45" width="60"/>Facebook Album</a>
+            <a class="navbar-brand" href="index.php">Facebook Album</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-            <!-- code for the right side of the navbar -->
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="contact.php">Contact Us</a></li>
+                <li class="active"><a href="../index.php">Home <span class="sr-only">(current)</span></a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
