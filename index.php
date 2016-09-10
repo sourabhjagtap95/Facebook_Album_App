@@ -550,8 +550,8 @@ else if(isset($_POST['download_button_all'])) {
                     }
                 }
                 $zip->close();
-                header('Content-Disposition: attachment; filename="All_Photos.ZIP"');
                 header('Content-type: application/octet-stream');
+                header('Content-Disposition: attachment; filename="All_Photos.ZIP"');
                 readfile($zip_folder);
             }
         }
