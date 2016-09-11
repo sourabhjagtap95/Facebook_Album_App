@@ -2,7 +2,7 @@
 It is a Web Application which shows all the photos from Facebook Albums once user authorizes it.
 For more information please visit https://careers.rtcamp.com/web-developers/assignments/#facebook-challenge
 
-#Working Demo
+Working Demo
 https://facebookgalleryapp.herokuapp.com
 
 #Libraries Used
@@ -17,6 +17,10 @@ https://github.com/blueimp/Bootstrap-Image-Gallery
 BootStrap 
 -----------------
 http://getbootstrap.com/
+
+PACE (Automatic Page Loader Progress Bar)
+-----------------
+http://github.hubspot.com/pace/docs/welcome/
 
 How To Use
 -----------------
