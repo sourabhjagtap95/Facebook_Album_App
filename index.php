@@ -319,7 +319,7 @@ if(!empty($_SESSION['facebook_access_token']) && isset($_SESSION['facebook_acces
             <ul id="<?php echo $album['id']; ?>"
                 class="list-unstyled row albm-thmb thmb-light">
                 <li data-src="<?php echo $album_cover_photo; ?>">
-                    <div class="thumbnail no-border center" style="box-shadow: 0px 0px 63px -2px rgba(0,0,0,0.75); margin:10px;">
+                    <div class="thumbnail no-border center" style="box-shadow: 0px 0px 30px -2px rgba(0,0,0,0.75); margin:10px; border-radius:10px;">
                         <div id="links">
 
                             <a href="<?php echo $album_photo['source']; ?>"
