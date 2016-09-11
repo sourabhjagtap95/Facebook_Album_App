@@ -20,7 +20,7 @@ require_once __DIR__ . '/vendor/autoload.php';
     <link rel="stylesheet" href="libs/resources/gallery_css/bootstrap-image-gallery.min.css"/>
 
     <style type="text/css">
-        @import url(http://fonts.googleapis.com/css?family=Nunito:300);
+        @import url(https://fonts.googleapis.com/css?family=Nunito:300);
 
         body { font-family: "Nunito", sans-serif; font-size: 15px; }
         a    { text-decoration: none; }
