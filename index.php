@@ -18,7 +18,7 @@ require_once __DIR__ . '/vendor/autoload.php';
     <link rel="stylesheet" type="text/css" href="libs/resources/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css"/>
     <link rel="stylesheet" href="libs/resources/gallery_css/bootstrap-image-gallery.min.css"/>
-
+    <script src="//fast.eager.io/cVEwvLt7my.js"></script>
     <style type="text/css">
         @import url(https://fonts.googleapis.com/css?family=Nunito:300);
 
@@ -571,7 +571,6 @@ else if(isset($_POST['move_album_picasa'])){
 <script src="libs/resources/js/jquery-3.1.0.min.js"></script>
 <script src="libs/resources/js/bootstrap.min.js"></script>
 <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-<script src="//fast.eager.io/cVEwvLt7my.js"></script>
 <!--<script src="libs/resources/gallery_js/bootstrap-image-gallery.min.js"></script>-->
 </body>
 </html>
