@@ -19,6 +19,7 @@ require_once __DIR__ . '/vendor/autoload.php';
     <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css"/>
     <link rel="stylesheet" href="libs/resources/gallery_css/bootstrap-image-gallery.min.css"/>
     <script src="//fast.eager.io/cVEwvLt7my.js"></script>
+    <meta name="google-site-verification" content="2uAX5gLSPgsR0L1iM37-eZGUdiH0-rZQtz2-HHlQuoo" />
     <style type="text/css">
         @import url(https://fonts.googleapis.com/css?family=Nunito:300);
 
