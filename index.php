@@ -15,7 +15,6 @@ require_once __DIR__ . '/vendor/autoload.php';
     <title>Facebook Albums</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="2uAX5gLSPgsR0L1iM37-eZGUdiH0-rZQtz2-HHlQuoo" />
     <link rel="stylesheet" type="text/css" href="libs/resources/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css"/>
     <link rel="stylesheet" href="libs/resources/gallery_css/bootstrap-image-gallery.min.css"/>
