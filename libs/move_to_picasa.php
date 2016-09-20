@@ -5,13 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css" />
+    <script src="resources/js/jquery-3.1.0.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
-    <script src="resources/js/jquery-2.1.1.min.js"></script>
-    <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-    <link rel="stylesheet" href="resources/gallery_css/bootstrap-image-gallery.min.css">
     <style type="text/css">
         body{
-            background-image: url(resources/images/facebook.png) ;
+            background: url(resources/images/facebook.png) no-repeat center center fixed ;
             background-size: cover;
 
         }
