@@ -73,7 +73,6 @@ $client1->setAuthConfigFile('user_credentials.json');
 $client1->setAccessType("offline");
 
 if(!isset($_SESSION['access_token'])){
-    echo $_SESSION['access_token'];
     ?>
     <div class="container">
         <div class="jumbotron">
