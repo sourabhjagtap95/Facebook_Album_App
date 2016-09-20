@@ -72,6 +72,7 @@ $client1->setAuthConfigFile('user_credentials.json');
 $client1->setAccessType("offline");
 
 if(!isset($_SESSION['access_token'])){
+    echo 'if';
     ?>
     <div class="container">
         <div class="jumbotron">
@@ -83,6 +84,7 @@ if(!isset($_SESSION['access_token'])){
     <?php
 }
 else{
+    echo 'else';
     $client1->setAccessToken($_SESSION['access_token']);
 
     $client = Zend_Gdata_AuthSub::getHttpClient( $_SESSION['access_token'] );
