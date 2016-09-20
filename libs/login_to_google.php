@@ -5,81 +5,93 @@
  * Date: 30/8/16
  * Time: 12:26 AM
  */
+session_start();
+require_once 'google-api/vendor/autoload.php';
+
+/*$params = array(
+    "scope" => "https://picasaweb.google.com/data",
+    "response_type" => "code",
+    "redirect_uri" => "http://localhost/Facebook_app/libs/login_to_google.php/",
+    "client_id" => "792922810897-ft5ntas7278k1fadbtvh2t17g3592u79.apps.googleusercontent.com"
+);*/
+
+
+$client = new Google_Client();
+$client->setAuthConfig('user_credentials.json');
+$client->setRedirectUri('http://localhost/Facebook_app/libs/login_to_google.php/');
+$client->addScope('https://picasaweb.google.com/data');
+$client->setAccessType("offline");
+$client->setPrompt('consent');
+$client->setIncludeGrantedScopes(true);
+
+
+if (! isset($_GET['code'])) {
+    $auth_url = $client->createAuthUrl();
+//    echo $auth_url;
+    header('Location: ' . filter_var($auth_url, FILTER_SANITIZE_URL));
+} else {
+    $client->authenticate($_GET['code']);
+    $access_token = $client->getAccessToken();
+    $redirect_uri = 'http://localhost/Facebook_app/libs/move_to_picasa.php';
+//    $_SESSION['access_token'] = $access_token->access_token;
+//     print_r($access_token);
+      $_SESSION['access_token'] = array_values($access_token)[0];   //access_token
+    $_SESSION['refresh_token'] = array_values($access_token)[3];    //refresh_token
+//    echo $_SESSION['access_token'] . "\n";
+//    echo $_SESSION['refresh_token'];
+    header('Location: ' . $redirect_uri);
+}
+
+
+
+
+
+
+
+//Client-id - 792922810897-ft5ntas7278k1fadbtvh2t17g3592u79.apps.googleusercontent.com
+//Client-secret - NUltcfo5_CUYjl2TIVQEyjOn
+/*require_once 'Zend/Loader.php';
+Zend_Loader::loadClass('Zend_Gdata_Photos');
+Zend_Loader::loadClass('Zend_Gdata_ClientLogin');
+Zend_Loader::loadClass('Zend_Gdata_AuthSub');*/
+
+/*if(!isset($_GET['code'])) {
+    $url = "https://accounts.google.com/o/oauth2/auth";
+
+    $params = array(
+        "scope" => "https://picasaweb.google.com/data",
+        "response_type" => "code",
+        "redirect_uri" => "http://localhost/Facebook_app/libs/login_to_google.php/",
+        "client_id" => "792922810897-ft5ntas7278k1fadbtvh2t17g3592u79.apps.googleusercontent.com"
+    );
+    $request_to = $url . "?" . http_build_query($params);
+    header("Location: " . $request_to);
+//echo $request_to;
+}
+if(isset($_GET['code'])){
+    $code = $_GET['code'];
+//    echo $code;
+    $url = "https://accounts.google.com/o/oauth2/token";
+    $params = array(
+        "code" => $code,
+        "redirect_uri" => "http://localhost/Facebook_app/libs/login_to_google.php/",
+        "client_id" => "792922810897-ft5ntas7278k1fadbtvh2t17g3592u79.apps.googleusercontent.com",
+        "client_secret" => "NUltcfo5_CUYjl2TIVQEyjOn",
+        "grant_type" => "authorization_code"
+    );
+
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+    $head = curl_exec($ch);
+    curl_close($ch);
+    echo $head;
+    /*$request = new HttpRequest($url,HttpRequest::METH_POST);
+    $request->setPostFields($params);
+    $request->send();
+    $response_obj = json_decode($head);
+    echo "Access Token: " .$response_obj->access_token;*/
 ?>
-
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <title>Facebook Albums</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../libs/resources/css/bootstrap.min.css" />
-    <script src="../libs/resources/js/bootstrap.min.js"></script>
-    <script src="../libs/resources/js/jquery-2.1.1.min.js"></script>
-    <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-    <link rel="stylesheet" href="../libs/resources/gallery_css/bootstrap-image-gallery.min.css">
-    <style type="text/css">
-        body{
-            background-image: url(../libs/resources/images/background.jpg) ;
-            background-size: cover;
-
-        }
-        .logo{
-            float: left;
-            margin-top: -12px;
-        }
-        .container-fluid{
-            border-bottom-style: solid;
-            border-bottom: 1px solid green;
-        }
-    </style>
-</head>
-<body>
-
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="index.php">Facebook Album</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="../index.php">Home <span class="sr-only">(current)</span></a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-
-<div class="container">
-    <div class="jumbotron">
-        <div class="alert alert-danger">
-        <h2>
-            Sorry !! Cannot provide authentication from Google
-        </h2>
-            </div>
-        <hr>
-        </br>
-        <div class="alert alert-info">
-        <h4>
-            As OAuth 1.0 has been replaced by OAuth 2.0 as of April 20,2015 and there are no APIs provided from OAuth 2.0 for Google+(Picasa) Photos.
-            Earlier, there used to be Picasa Web Albums Data API Version 1.0 which uses Zend Framework.
-            For more information refer <a href="https://developers.google.com/picasa-web/docs/1.0/developers_guide_php">Google Picasa Developer's site</a>
-            and <a href="https://support.google.com/a/answer/162106?p=authsub&rd=3">Google OAuth Support</a>
-        </h4>
-            </div>
-        <div class="well text-center">
-            <a href="../index.php" class="btn btn-warning btn-lg">Go Back to your Album Page</a>
-        </div>
-    </div>
-</div>
-</body>
-</html>
 
