@@ -9,7 +9,7 @@
     <script src="resources/js/bootstrap.min.js"></script>
     <style type="text/css">
         body{
-            background: url(resources/images/facebook.png) no-repeat center center fixed ;
+            background: url(resources/images/facebook.png) no-repeat center center fixed;
             background-size: cover;
 
         }
