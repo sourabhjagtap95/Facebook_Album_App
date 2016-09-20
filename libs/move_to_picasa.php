@@ -71,7 +71,6 @@ Zend_Loader::loadClass('Zend_Gdata_AuthSub');
 $client1 = new Google_Client();
 $client1->setAuthConfigFile('user_credentials.json');
 $client1->setAccessType("offline");
-//$client->addScope(Google_Service_Drive::DRIVE_METADATA_READONLY);
 
 if(!isset($_SESSION['access_token'])){
     echo $_SESSION['access_token'];
@@ -153,7 +152,6 @@ else{
         <div class="jumbotron">
             <div class="row text-center">
                 <h1>Added Successfully</h1></br>
-                <a href="https://picasaweb.google.com/data/entry/api/user/default/albumid/<?php echo $album_id?>" class="btn btn-success btn-lg">Check It Out</a>
                 <a class="btn btn-primary btn-lg" href="../index.php" >Go Back</a>
             </div>
         </div>
