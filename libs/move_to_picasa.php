@@ -37,8 +37,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="../index.php"><img src="../libs/resources/images/facebook_home_logo_580-100034106-large.jpg"
-                                                             class="logo img-circle" height="45" width="60"/>Facebook Album</a>
+            <a class="navbar-brand" href="../index.php">Facebook Album</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
