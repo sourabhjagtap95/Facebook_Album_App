@@ -561,7 +561,7 @@ else if(isset($_POST['download_button_all'])) {
 }
 else if(isset($_POST['move_album_picasa'])){
     if(!isset($_GET['google_session'])){
-        echo "<script>window.location.href='libs/login_to_google.php';</script>";
+        echo "<script>window.location.href='libs/move_to_picasa.php';</script>";
     }
 }
 
