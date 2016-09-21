@@ -21,10 +21,31 @@
             border-bottom-style: solid;
             border-bottom: 1px solid green;
         }
+        #loader
+        {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #ccc;
+            border-top-color: #ff6a00;
+            border-radius: 100%;
+            position: fixed;
+            left: 0; right: 0; top: 0; bottom: 0;
+            margin: auto;
+            animation: round 2s linear infinite;
+        }
+        @keyframes round {
+            from{transform: rotate(0deg)}
+            to{transform: rotate(360deg)}
+        }
     </style>
+    <script type="text/javascript">
+        $(window).on('load',function () {
+            $('#loader').fadeOut();
+        });
+    </script>
 </head>
 <body>
-
+<div id="loader"></div>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
