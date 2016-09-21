@@ -55,7 +55,7 @@
  * Time: 12:58 PM
  */
  // session_start();
-require_once 'google-api/vendor/autoload.php';
+/*require_once 'google-api/vendor/autoload.php';
 require_once 'Zend/Loader.php';
 require_once ('../fbconfig.php');
 require_once ('../vendor/autoload.php');
@@ -68,7 +68,7 @@ Zend_Loader::loadClass('Zend_Gdata_AuthSub');
 
 $client1 = new Google_Client();
 $client1->setAuthConfigFile('user_credentials.json');
-$client1->setAccessType("offline");
+$client1->setAccessType("offline");*/
 
 if(!isset($_SESSION['access_token'])){
     echo 'if';
