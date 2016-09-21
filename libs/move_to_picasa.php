@@ -56,9 +56,9 @@
  */
  // session_start();
 require_once 'google-api/vendor/autoload.php';
-require_once 'Zend/Loader.php';
-require_once ('../fbconfig.php');
-require_once ('../vendor/autoload.php');
+//require_once 'Zend/Loader.php';
+//require_once ('../fbconfig.php');
+//require_once ('../vendor/autoload.php');
 
 /*\Facebook\FacebookSession::setDefaultApplication($app_id,$app_secret);
 
