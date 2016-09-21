@@ -60,7 +60,7 @@ require_once 'Zend/Loader.php';
 require_once ('../fbconfig.php');
 require_once ('../vendor/autoload.php');
 
-/*\Facebook\FacebookSession::setDefaultApplication($app_id,$app_secret);
+\Facebook\FacebookSession::setDefaultApplication($app_id,$app_secret);
 
 Zend_Loader::loadClass('Zend_Gdata_Photos');
 Zend_Loader::loadClass('Zend_Gdata_ClientLogin');
@@ -68,7 +68,7 @@ Zend_Loader::loadClass('Zend_Gdata_AuthSub');
 
 $client1 = new Google_Client();
 $client1->setAuthConfigFile('user_credentials.json');
-$client1->setAccessType("offline");*/
+$client1->setAccessType("offline");
 
 if(!isset($_SESSION['access_token'])){
     echo 'if';
