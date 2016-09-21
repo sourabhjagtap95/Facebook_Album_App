@@ -55,12 +55,12 @@
  * Time: 12:58 PM
  */
  // session_start();
-/*require_once 'google-api/vendor/autoload.php';
+require_once 'google-api/vendor/autoload.php';
 require_once 'Zend/Loader.php';
 require_once ('../fbconfig.php');
 require_once ('../vendor/autoload.php');
 
-\Facebook\FacebookSession::setDefaultApplication($app_id,$app_secret);
+/*\Facebook\FacebookSession::setDefaultApplication($app_id,$app_secret);
 
 Zend_Loader::loadClass('Zend_Gdata_Photos');
 Zend_Loader::loadClass('Zend_Gdata_ClientLogin');
