@@ -501,7 +501,7 @@ if(isset($_POST['download_button'])) {
                 mkdir($photos_directory, 0777);
             else {
                 if($zip_status) {
-                    $zip->addFromString(uniqid(),file_get_contents($photo_selected));
+                    $zip->addFromString(uniqid().'.jpeg',file_get_contents($photo_selected));
                 }
             }
         }
@@ -543,7 +543,7 @@ else if(isset($_POST['download_button_all'])) {
                         mkdir($photos_directory, 0777);
                     else {
                         if($zip_status) {
-                            $zip->addFromString(uniqid(),file_get_contents($albums_photo_all['source']));
+                            $zip->addFromString(uniqid().'.jpeg',file_get_contents($albums_photo_all['source']));
 //                                            file_put_contents($photos_directory . "/" . uniqid() . ".jpg", fopen($albums_photo_all['source'], 'r'));
                         }
 
