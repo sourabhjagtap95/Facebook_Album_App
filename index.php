@@ -128,7 +128,9 @@ require_once __DIR__ . '/vendor/autoload.php';
             background-color: #f5f5f5;
             display: block;
         }
-
+        .thumbnail:hover, .thumbnail:active {
+	        box-shadow: 0px 0px 30px -2px rgba(0,0,0,0.75);
+	    }
     </style>
 </head>
 <body>
@@ -320,7 +322,7 @@ if(!empty($_SESSION['facebook_access_token']) && isset($_SESSION['facebook_acces
             <ul id="<?php echo $album['id']; ?>"
                 class="list-unstyled row albm-thmb thmb-light">
                 <li data-src="<?php echo $album_cover_photo; ?>">
-                    <div class="thumbnail no-border center" style="box-shadow: 0px 0px 30px -2px rgba(0,0,0,0.75); margin:10px; border-radius:10px;">
+                    <div class="thumbnail no-border center" style="border: 2px solid #2196F3; margin:10px; border-radius:10px;">
                         <div id="links">
 
                             <a href="<?php echo $album_photo['source']; ?>"
