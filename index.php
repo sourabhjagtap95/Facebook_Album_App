@@ -508,6 +508,7 @@ if(isset($_POST['download_button'])) {
         $zip->close();
         header('Content-Disposition: attachment; filename="save_as.zip"');
         header('Content-type: application/zip');
+        ob_end_clean();
         readfile($zip_folder);
     }
     else
@@ -553,6 +554,7 @@ else if(isset($_POST['download_button_all'])) {
                 $zip->close();
                 header('Content-type: application/octet-stream');
                 header('Content-Disposition: attachment; filename="All_Photos.ZIP"');
+                ob_end_clean();
                 readfile($zip_folder);
             }
         }
