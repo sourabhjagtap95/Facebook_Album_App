@@ -418,7 +418,7 @@ else
             <div class="collapse navbar-collapse" id="bs">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#about" role="button" data-toggle="modal">About</a></li>
+<!--                     <li><a href="#about" role="button" data-toggle="modal">About</a></li> -->
                 </ul>
                 <!-- code for the right side of the navbar -->
                 <ul class="nav navbar-nav navbar-right">
