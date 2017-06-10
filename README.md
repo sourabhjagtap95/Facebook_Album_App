@@ -5,6 +5,7 @@ Working Demo
 https://facebookgalleryapp.herokuapp.com
 
 Libraries Used
+-----------------
 Facebook PHP SDK
 -----------------
 https://developers.facebook.com/docs/web
