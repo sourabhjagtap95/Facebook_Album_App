@@ -97,6 +97,12 @@ if(!isset($_SESSION['access_token'])){
     <div class="container">
         <div class="jumbotron">
             <div class="row text-center">
+                <h2>
+                Zend_Gdata framework do not allow creation of album in Google Picasa Web Album.
+                This code is written in previous version of Picasa Web Album Data API (v1) in PHP.
+                So, this feature will work for the newer version i.e. v3 which does not provide PHP support yet.
+                For more information, visit <a href="https://developers.google.com/picasa-web/docs/3.0/releasenotes#mutation-support-removed"> Release Notes </a><br/>
+                </h2>
                 <a class="btn btn-warning btn-lg" href="login_to_google.php">Google</a>
             </div>
         </div>
