@@ -104,6 +104,7 @@ if(!isset($_SESSION['access_token'])){
                 For more information, visit <a href="https://developers.google.com/picasa-web/docs/3.0/releasenotes#mutation-support-removed"> Release Notes </a><br/>
                 </h2>
                 <a class="btn btn-warning btn-lg" disabled href="login_to_google.php">Google</a>
+                <input type="button" class="btn btn-info btn-lg" onclick="window.history.back();" value="Go Back">
             </div>
         </div>
     </div>
