@@ -103,7 +103,7 @@ if(!isset($_SESSION['access_token'])){
                 So, this feature will work for the newer version i.e. v3 which does not provide PHP support yet.
                 For more information, visit <a href="https://developers.google.com/picasa-web/docs/3.0/releasenotes#mutation-support-removed"> Release Notes </a><br/>
                 </h2>
-                <a class="btn btn-warning btn-lg" href="login_to_google.php">Google</a>
+                <a class="btn btn-warning btn-lg" disabled href="login_to_google.php">Google</a>
             </div>
         </div>
     </div>
