@@ -588,9 +588,9 @@ else if(isset($_POST['move_album_picasa'])){
 <script>
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : 'your-app-id',
+      appId      : '1733591630236331',
       xfbml      : true,
-      version    : 'v2.8'
+      version    : 'v2.9'
     });
     FB.AppEvents.logPageView();
   };
