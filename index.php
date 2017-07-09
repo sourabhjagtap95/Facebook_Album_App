@@ -141,6 +141,7 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '441901622832654'); // Insert your pixel ID here.
 fbq('track', 'PageView');
+fbq('track', 'ViewContent');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=441901622832654&ev=PageView&noscript=1"
@@ -223,7 +224,12 @@ if(!empty($_SESSION['facebook_access_token']) && isset($_SESSION['facebook_acces
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
     </nav>
-
+<script>
+fbq('track', 'ViewContent', {
+value: 500000,
+currency: 'INR'
+});
+</script>
     <!--    Main Body-->
 
     <div class="container">
