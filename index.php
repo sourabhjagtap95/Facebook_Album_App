@@ -134,12 +134,6 @@ require_once __DIR__ . '/vendor/autoload.php';
     </style>
 </head>
 <body>
-	<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
 <?php
 
 \Facebook\FacebookSession::setDefaultApplication($app_id,$app_secret);
@@ -390,6 +384,12 @@ if(!empty($_SESSION['facebook_access_token']) && isset($_SESSION['facebook_acces
                 </button>
             </div>
             </form>
+		<div
+		  class="fb-like text-right"
+		  data-share="true"
+		  data-width="450"
+		  data-show-faces="true">
+		</div>
             </div>
             </div>
 
