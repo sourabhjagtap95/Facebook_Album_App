@@ -134,6 +134,12 @@ require_once __DIR__ . '/vendor/autoload.php';
     </style>
 </head>
 <body>
+	<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
 <?php
 
 \Facebook\FacebookSession::setDefaultApplication($app_id,$app_secret);
