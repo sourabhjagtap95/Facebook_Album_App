@@ -132,6 +132,13 @@ require_once __DIR__ . '/vendor/autoload.php';
 	        box-shadow: 0px 0px 30px -2px rgba(0,0,0,0.75);
 	    }
     </style>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6551970076619458",
+    enable_page_level_ads: true
+  });
+</script>
 <!-- Facebook Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
