@@ -648,5 +648,6 @@ else if(isset($_POST['move_album_picasa'])){
 <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <!--<script src="libs/resources/gallery_js/bootstrap-image-gallery.min.js"></script>-->
 <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59b67e1c105da68d"></script> 
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59b67e1c105da68d"></script> 
 </body>
 </html>
