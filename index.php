@@ -62,11 +62,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 
             transition: all 0.5s;
         }
-	.addthis_tipjar_inline{
-		position: fixed;
-		bottom: 10px;
-		right: 10px;
-	}
 	.navbar{
 		background-color: #fff;
 		border: none;
