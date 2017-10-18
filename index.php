@@ -31,7 +31,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 
         body { font-family: "Nunito", sans-serif; font-size: 15px; }
         a    { text-decoration: none; }
-        p    { text-align: center; }
         sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
 
         .button
