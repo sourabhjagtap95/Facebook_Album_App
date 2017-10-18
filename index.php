@@ -16,6 +16,11 @@ require_once __DIR__ . '/vendor/autoload.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="2uAX5gLSPgsR0L1iM37-eZGUdiH0-rZQtz2-HHlQuoo" />
+	<meta property="og:url" content="https://facebookgalleryapp.herokuapp.com" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Facebook Album App" />
+	<meta property="og:description" content="Get all of your Album photos in one place and download it later." />
+	<meta property="og:image" content="https://themechangers.files.wordpress.com/2014/11/website-design-background1.png" />
     <link rel="stylesheet" type="text/css" href="libs/resources/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css"/>
     <link rel="stylesheet" href="libs/resources/gallery_css/bootstrap-image-gallery.min.css"/>
