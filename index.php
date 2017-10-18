@@ -172,6 +172,7 @@ src="https://www.facebook.com/tr?id=441901622832654&ev=PageView&noscript=1"
 <!-- End Facebook Pixel Code -->
 </head>
 <body>
+	<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_tipjar_inline"></div>
 <?php
 
 \Facebook\FacebookSession::setDefaultApplication($app_id,$app_secret);
@@ -253,7 +254,7 @@ currency: 'INR'
 });
 </script>
     <!--    Main Body-->
- <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_tipjar_inline"></div>
+ 
     <div class="container">
     <div class="panel-group">
     <div class="panel panel-primary">
