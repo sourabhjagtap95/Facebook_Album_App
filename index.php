@@ -172,7 +172,30 @@ src="https://www.facebook.com/tr?id=441901622832654&ev=PageView&noscript=1"
 <!-- End Facebook Pixel Code -->
 </head>
 <body>
-	<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_tipjar_inline"></div>
+ <!-- Modal Donation-->
+    <div class="modal fade" id="donate" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Want to Donate?</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                    <h4>It will be very nice if you can donate. Thank you !!</h4>
+		<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_tipjar_inline"></div>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+	
 <?php
 
 \Facebook\FacebookSession::setDefaultApplication($app_id,$app_secret);
@@ -229,6 +252,7 @@ if(!empty($_SESSION['facebook_access_token']) && isset($_SESSION['facebook_acces
             <div class="collapse navbar-collapse" id="bs">
                 <ul class="nav navbar-nav">
                     <li><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
+			<li><a href="#donate" role="button" data-toggle="modal">Donate?</a></li> 
                 </ul>
                 <!-- code for the right side of the navbar -->
                 <div class="nav navbar-nav navbar-right">
@@ -469,6 +493,7 @@ else
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
 <!--                     <li><a href="#about" role="button" data-toggle="modal">About</a></li> -->
+			<li><a href="#donate" role="button" data-toggle="modal">Donate?</a></li> 
                 </ul>
                 <!-- code for the right side of the navbar -->
                 <ul class="nav navbar-nav navbar-right">
@@ -502,6 +527,8 @@ else
 
         </div>
     </div>
+	
+	
     <!-- Modal About-->
     <div class="modal fade" id="about" role="dialog">
         <div class="modal-dialog">
