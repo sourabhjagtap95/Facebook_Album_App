@@ -178,10 +178,8 @@ src="https://www.facebook.com/tr?id=441901622832654&ev=PageView&noscript=1"
                     <h4 class="modal-title">Want to Donate?</h4>
                 </div>
                 <div class="modal-body">
-                    <p>
                     <h4>It will be very nice if you can donate. Thank you !!</h4>
 		<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_tipjar_inline"></div>
-                    </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
