@@ -62,7 +62,16 @@ require_once __DIR__ . '/vendor/autoload.php';
 
             transition: all 0.5s;
         }
-
+	.addthis_tipjar_inline{
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+	}
+	.navbar{
+		background-color: #fff;
+		border: none;
+		border-radius: 0px;
+	}
         .button:hover, .button:active
         {
             text-decoration: none;
@@ -244,7 +253,7 @@ currency: 'INR'
 });
 </script>
     <!--    Main Body-->
-
+ <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_tipjar_inline"></div>
     <div class="container">
     <div class="panel-group">
     <div class="panel panel-primary">
