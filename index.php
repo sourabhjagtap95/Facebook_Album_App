@@ -18,6 +18,7 @@ require_once __DIR__ . '/vendor/autoload.php';
     <meta name="google-site-verification" content="2uAX5gLSPgsR0L1iM37-eZGUdiH0-rZQtz2-HHlQuoo" />
 <meta property="og:url" content="https://facebookgalleryapp.herokuapp.com" />
 <meta property="og:type" content="website" />
+<meta property="fb:app_id" content="1733591630236331" />
 <meta property="og:title" content="Facebook Album App" />
 <meta property="og:description" content="Get all of your Album photos in one place and download it later." />
 <meta property="og:image" content="http://www.telegraph.co.uk/content/dam/technology/2016/07/01/102002782-facebook-xlarge_trans_NvBQzQNjv4BqhasgUMiR-rxiRxu9qBoVLQpcDfsC-seRM-lm2nZ7XJA.jpg" />
