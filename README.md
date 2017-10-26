@@ -4,24 +4,6 @@ It is a Web Application which shows all the photos from Facebook Albums once use
 Working Demo
 https://facebookgalleryapp.herokuapp.com
 
-Libraries Used
------------------
-Facebook PHP SDK
------------------
-https://developers.facebook.com/docs/web
-
-Bootstrap-Image-Gallery
------------------
-https://github.com/blueimp/Bootstrap-Image-Gallery
-
-BootStrap 
------------------
-http://getbootstrap.com/
-
-PACE (Automatic Page Loader Progress Bar)
------------------
-http://github.hubspot.com/pace/docs/welcome/
-
 How To Use
 -----------------
 <strong>Steps:</strong></br>
