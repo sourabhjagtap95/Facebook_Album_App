@@ -16,7 +16,7 @@ require_once __DIR__ . '/vendor/autoload.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="2uAX5gLSPgsR0L1iM37-eZGUdiH0-rZQtz2-HHlQuoo" />
-<meta property="og:url" content="https://facebookgalleryapp.herokuapp.com" />
+<meta property="og:url" content="https://yourfacebookimages.herokuapp.com" />
 <meta property="og:type" content="website" />
 <meta property="fb:app_id" content="1733591630236331" />
 <meta property="og:title" content="Facebook Album App" />
