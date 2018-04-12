@@ -197,7 +197,7 @@ src="https://www.facebook.com/tr?id=441901622832654&ev=PageView&noscript=1"
 
 $helper = $fb->getRedirectLoginHelper(); /*The FacebookRedirectLoginHelper
                                            makes use of sessions to store a CSRF value.*/
-
+$_SESSION['FBRLH_state']=$_GET['state'];
 
 $permissions = ['email','user_photos'];
 $login_url = $helper->getLoginUrl('https://'.$_SERVER['SERVER_NAME'].'/login-callback.php',$permissions);
