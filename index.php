@@ -11,7 +11,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 if(!session_id()){
     session_start();
 }
-echo session_id();
+// echo session_id();
 ?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
