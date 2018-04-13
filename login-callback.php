@@ -15,12 +15,14 @@ require_once __DIR__ . '/vendor/autoload.php';
 $helper = $fb->getRedirectLoginHelper();
 try{
     $accessToken = $helper->getAccessToken();
+ echo "AT: ".$accessToken;
 } catch (\Facebook\Exceptions\FacebookResponseException $e){
     // When Graph returns an error
     echo 'Graph returned an error : ' .$e->getMessage();
     exit;
 } catch (\Facebook\Exceptions\FacebookSDKException $e){
     // When validation fails or other local issues
+    echo "here comes the error";
     echo 'Facebook SDK returned an error : ' .$e->getMessage();
     exit;
 }
