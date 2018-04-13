@@ -206,7 +206,7 @@ $login_url = $helper->getLoginUrl('https://yourfacebookimages.herokuapp.com/logi
 // echo "LOGIN URL".$login_url;
 
 if(!empty($_SESSION['facebook_access_token']) && isset($_SESSION['facebook_access_token'])) {
-
+	echo "facebook_access_token";
     $accessToken = $_SESSION['facebook_access_token'];
 
     $fbApp = new \Facebook\FacebookApp($app_id,$app_secret);
@@ -220,6 +220,7 @@ if(!empty($_SESSION['facebook_access_token']) && isset($_SESSION['facebook_acces
         exit;
     } catch (\Facebook\Exceptions\FacebookSDKException $e){
         // When  Validation fails or some other issues
+	echo "here we go";
         echo "Facebook SDK returned an error : " .$e->getMessage();
         exit;
     }
