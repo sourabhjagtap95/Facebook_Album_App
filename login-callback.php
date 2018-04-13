@@ -27,7 +27,7 @@ try{
 if(isset($accessToken)){
     // User Logged In !!
 
-
+     echo "Access Token ".$accessToken; 
     /**When a user first logs into your app, the access token your app receives
      * will be a short-lived access token that lasts about 2 hours.
      * It's generally a good idea to exchange the short-lived access
