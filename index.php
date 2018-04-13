@@ -200,7 +200,7 @@ $helper = $fb->getRedirectLoginHelper(); /*The FacebookRedirectLoginHelper
 $_SESSION['FBRLH_state']=$_GET['state'];
 
 $permissions = ['email','user_photos'];
-$login_url = $helper->getLoginUrl('https://'.$_SERVER['SERVER_NAME'].'/login-callback.php',$permissions);
+$login_url = $helper->getLoginUrl('https://yourfacebookimages.herokuapp.com/login-callback.php',$permissions);
 
 // echo "LOGIN URL".$login_url;
 
