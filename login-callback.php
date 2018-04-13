@@ -15,7 +15,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 $helper = $fb->getRedirectLoginHelper();
 $_SESSION['FBRLH_state']=$_GET['state'];
 try{
-    $accessToken = $helper->getAccessToken();
+    $accessToken = $helper->getAccessToken("https://yourfacebookimages.herokuapp.com/login-callback.php");
  echo "AT: ".$accessToken;
 } catch (\Facebook\Exceptions\FacebookResponseException $e){
     // When Graph returns an error
