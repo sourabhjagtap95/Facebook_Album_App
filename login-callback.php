@@ -22,7 +22,7 @@ try{
     exit;
 } catch (\Facebook\Exceptions\FacebookSDKException $e){
     // When validation fails or other local issues
-    echo "here comes the error";
+    echo session_id();
     echo 'Facebook SDK returned an error : ' .$e->getMessage();
     exit;
 }
