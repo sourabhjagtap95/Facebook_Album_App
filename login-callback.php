@@ -16,10 +16,10 @@ $helper = $fb->getRedirectLoginHelper();
 $_SESSION['FBRLH_state']=$_GET['state'];
 try{
     $accessToken = $helper->getAccessToken("https://yourfacebookimages.herokuapp.com/login-callback.php");
- echo "AT: ".$accessToken;
+//  echo "AT: ".$accessToken;
 } catch (\Facebook\Exceptions\FacebookResponseException $e){
     // When Graph returns an error
- echo session_id();
+//  echo session_id();
     echo 'Graph returned an error : ' .$e->getMessage();
     exit;
 } catch (\Facebook\Exceptions\FacebookSDKException $e){
