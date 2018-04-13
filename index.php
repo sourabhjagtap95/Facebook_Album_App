@@ -5,13 +5,13 @@
  * Date: 28/8/16
  * Time: 9:39 PM
  */
+ob_start();
+require_once ('fbconfig.php');
+require_once __DIR__ . '/vendor/autoload.php';
 if(!session_id()){
     session_start();
 }
 echo session_id();
-ob_start();
-require_once ('fbconfig.php');
-require_once __DIR__ . '/vendor/autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
