@@ -202,7 +202,7 @@ $_SESSION['FBRLH_state']=$_GET['state'];
 $permissions = ['email','user_photos'];
 $login_url = $helper->getLoginUrl('https://'.$_SERVER['SERVER_NAME'].'/login-callback.php',$permissions);
 
-echo "LOGIN URL".$login_url;
+// echo "LOGIN URL".$login_url;
 
 if(!empty($_SESSION['facebook_access_token']) && isset($_SESSION['facebook_access_token'])) {
 
