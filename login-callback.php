@@ -19,11 +19,11 @@ try{
  echo "AT: ".$accessToken;
 } catch (\Facebook\Exceptions\FacebookResponseException $e){
     // When Graph returns an error
+ echo session_id();
     echo 'Graph returned an error : ' .$e->getMessage();
     exit;
 } catch (\Facebook\Exceptions\FacebookSDKException $e){
     // When validation fails or other local issues
-    echo session_id();
     echo 'Facebook SDK returned an error : ' .$e->getMessage();
     exit;
 }
