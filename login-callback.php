@@ -13,6 +13,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 
 $helper = $fb->getRedirectLoginHelper();
+$_SESSION['FBRLH_state']=$_GET['state'];
 try{
     $accessToken = $helper->getAccessToken();
  echo "AT: ".$accessToken;
