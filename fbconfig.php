@@ -16,6 +16,7 @@
         'app_id' => '1733591630236331' ,         //Your App ID
         'app_secret' => 'bf0790db124ab31c80d959a852dfe536',     //Your App Secret
         'default_graph_version' => 'v2.7',
+        'persistent_data_handler' => 'session'
     ]);
 $app_id = '1733591630236331';   //Type here also
 $app_secret = 'bf0790db124ab31c80d959a852dfe536';
