@@ -662,7 +662,7 @@ else if(isset($_POST['move_album_picasa'])){
     FB.init({
       appId      : '1733591630236331',
       xfbml      : true,
-      version    : 'v2.9'
+      version    : 'v2.12'
     });
     FB.AppEvents.logPageView();
   };
