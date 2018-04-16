@@ -2,7 +2,7 @@ Facebook Album App
 It is a Web Application which shows all the photos from Facebook Albums once user authorizes it.
 
 Working Demo
-https://facebookgalleryapp.herokuapp.com
+https://yourfacebookimages.herokuapp.com
 
 How To Use
 -----------------
