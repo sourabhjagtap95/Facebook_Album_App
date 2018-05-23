@@ -1,12 +1,10 @@
-> Note : Recently Facebook updated their policies for viewing the photos from 3rd party app, as a result I need to send my app for review and then it can be accessed. Till then be relax and visit again :D
-
-Facebook Album App
+# Facebook Album App
 It is a Web Application which shows all the photos from Facebook Albums once user authorizes it.
 
-Working Demo
+# Working Demo
 https://yourfacebookimages.herokuapp.com
 
-How To Use
+## How To Use
 -----------------
 <strong>Steps:</strong></br>
 1) Go to https://developers.facebook.com/ and register your self as Facebook developer.</br>
